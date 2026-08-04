@@ -3,7 +3,71 @@ body {
     color: hsl(60, 30%, 85%);
     margin: 0px;
     padding: 0px;
-    font-size: clamp(.5rem, 1rem, 3rem);
+    font-size: .85rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Google Sans', sans-serif;
+}
+
+input[type=button] {
+    background-color: hsl(240, 5%, 30%);
+    border: 0;
+    padding: 8px;
+    border-radius: 5px;
+    color: hsl(60, 20%, 85%);
+    font-weight: bold;
+}
+
+.class-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 8px;
+    gap: 8px;
+}
+
+.schedule-container {
+    background-color: hsl(240, 5%, 25%);
+    border-radius: 8px;
+}
+
+.class-container h2 {
+    padding: 16px;
+    background-color: hsl(240, 5%, 35%);
+    border-radius: 8px;
+    color: hsl(60, 20%, 95%);
+
+}
+
+.non-period {
+    display: flex;
+    flex-direction: column ;
+    flex-grow: 2;
+}
+
+.non-period p{
+    margin-bottom: 0px;
+}
+
+.teacher-name {
+    font-weight: bold;
+}
+
+a .schoolinks-button {
+    background-color: hsl(60, 100%, 65%);
+    color: hsl(0,0%,0%);
+}
+
+a .link-button {
+    background-color: hsl(2, 59%, 32%);
+}
+
+.user-input-JSON {
+    background-color: hsl(240, 5%, 35%);
+    min-width: 300px;
+    border: 0px;
+    border-radius: 4px;
+    color: hsl(60, 20%, 85%);
 }

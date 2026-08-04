@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Links Schedule Check</title>
     <link href="stylesheet.css" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+</style>
+
 </head>
 <body>
     <div class="redirect-buttons">
-    <a target="_blank" href="https://app.schoolinks.com/third-party-account/oauth2/clever/login/?action=login&next=https://app.schoolinks.com/login/k12"><input type="button" value="Go to Schoollinks (Clever)"></a>
-    <a target="_blank" href="https://myapps.microsoft.com/"><input type="button" value="Go to 1Link"></a>
+    <a target="_blank" href="https://app.schoolinks.com/third-party-account/oauth2/clever/login/?action=login&next=https://app.schoolinks.com/login/k12"><input type="button" value="Go to SchooLinks (Clever)" class="schoolinks-button"></a>
+    <a target="_blank" href="https://myapps.microsoft.com/"><input type="button" value="Go to 1Link" class="link-button"></a>
     </div>
     <div class="schedule-container"></div>
     <a target="_blank" href="https://app.schoolinks.com/api/v1/sl_users/students/0/k12-admins/"><input type="button" value="Go to k12 tab"></a>
     <textarea id="user-input" class="user-input-JSON" placeholder="Copy and paste information from new tab"></textarea>
-    <input type ='button' onclick="getSchedule()" value="Get Schedule">
+    <input type ='button' onclick="getSchedule()" value="Get Schedule" class="schedule-button">
     <script src="script.js" defer></script>
 </body>
 </html>

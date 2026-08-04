@@ -35,13 +35,19 @@ function createClassCard(classSubject, teacherName, classPeriod) {
 
     const teacher = document.createElement('p');
     teacher.textContent = teacherName;
+    teacher.className = 'teacher-name';
 
     const subject = document.createElement('p');
     subject.textContent = classSubject;
 
+    const nonPeriod = document.createElement('span');
+    nonPeriod.className = 'non-period';
+
+    nonPeriod.appendChild(teacher);
+    nonPeriod.appendChild(subject);
+    
     classContainer.appendChild(period);
-    classContainer.appendChild(teacher);
-    classContainer.appendChild(subject);
+    classContainer.appendChild(nonPeriod);
 
     scheduleContainer.appendChild(classContainer);
 };
