@@ -16,7 +16,7 @@ async function getSchedule() {
     console.log(data);
     for(i = 0; i < data.length; i++) {
     const fullString = data[i].caseloads[0].name;
-    classes[Number(fullString.charAt(fullString.length-1))] = fullString;
+    classes[Number(fullString.charAt(fullString.length-1))-1] = fullString;
     }
     console.log(classes);
    /* const name = JSON.parse(data);
