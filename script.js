@@ -1,5 +1,5 @@
-const scheduleContainer = document.querySelector('.scheduleContainer');
-const userInput = document.getElementById('userInput');
+const scheduleContainer = document.querySelector('.schedule-container');
+const userInput = document.getElementById('user-input');
 let schedule = [{},{},{},{},{},{},{}];
 
 async function getSchedule() {
