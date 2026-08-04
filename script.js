@@ -4,6 +4,7 @@ let schedule = [{},{},{},{},{},{},{}];
 
 async function getSchedule() {
     scheduleContainer.replaceChildren();
+    schedule = [{},{},{},{},{},{},{}];
     const rawJSON = userInput.value;
     const data = JSON.parse(rawJSON);
     if (data.detail==="Authentication credentials were not provided.") {
