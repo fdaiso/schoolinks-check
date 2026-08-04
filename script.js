@@ -14,8 +14,8 @@ async function getSchedule() {
     const data = await response.json();
     console.log(data);
     for(i = 0; i < data.length; i++) {
-    const fullString = data[i].caseloads[0].name;
-    schedule[Number(fullString.charAt(fullString.length-1))-1] = fullString;
+        const classTeacherPeriod = data[i].caseloads[0].name;
+        schedule[Number(classTeacherPeriod.charAt(classTeacherPeriod.length-1))-1] = classTeacherPeriod;
     }
     console.log(schedule);
     
