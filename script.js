@@ -12,11 +12,14 @@ async function getSchedule() {
     console.log(data);
     for(i = 0; i < data.length; i++) {
         const classTeacherPeriod = data[i].caseloads[0].name;
-        schedule[Number(classTeacherPeriod.charAt(classTeacherPeriod.length-1))-1] = classTeacherPeriod;
+        schedule[Number(classTeacherPeriod.charAt(classTeacherPeriod.length-1))] = classTeacherPeriod;
+        
     };
     console.log(schedule);
     schedule.forEach(period => {
-        createClassCard(period.substring(0,period.indexOf('-')-1), period.substring(period.indexOf('-')+2, period.length-4), period.charAt(period.length-1));
+        if ((typeof period === "string")) {
+            createClassCard(period.substring(0,period.indexOf('-')-1), period.substring(period.indexOf('-')+2, period.length-4), period.charAt(period.length-1));
+        }
     });
 };
 
