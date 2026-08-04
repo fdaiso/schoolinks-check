@@ -3,6 +3,7 @@ const userInput = document.getElementById('userInput');
 let schedule = [{},{},{},{},{},{},{}];
 
 async function getSchedule() {
+    scheduleContainer.replaceChildren();
     const rawJSON = userInput.value;
     const data = JSON.parse(rawJSON);
     if (data.detail==="Authentication credentials were not provided.") {
@@ -21,6 +22,7 @@ async function getSchedule() {
             createClassCard(period.substring(0,period.indexOf('-')-1), period.substring(period.indexOf('-')+2, period.length-4), period.charAt(period.length-1));
         }
     });
+    userInput.value = '';
 };
 
 function createClassCard(classSubject, teacherName, classPeriod) {
