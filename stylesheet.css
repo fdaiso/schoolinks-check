@@ -1,0 +1,7 @@
+body {
+    background-color: hsl(240, 5%, 20%);
+    color: hsl(60, 30%, 85%);
+    margin: 0px;
+    padding: 0px;
+    font-size: clamp(.5rem, 1rem, 3rem);
+}
