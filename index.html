@@ -11,14 +11,21 @@
 
 </head>
 <body>
+    <h2>Step 1:</h2>
+    <p>Sign into SchooLinks</p>
     <div class="redirect-buttons">
     <a target="_blank" href="https://app.schoolinks.com/third-party-account/oauth2/clever/login/?action=login&next=https://app.schoolinks.com/login/k12"><input type="button" value="Go to SchooLinks (Clever)" class="schoolinks-button"></a>
     <a target="_blank" href="https://myapps.microsoft.com/"><input type="button" value="Go to 1Link" class="link-button"></a>
     </div>
-    <div class="schedule-container"></div>
+    <h2>Step 2:</h2>
+    <p>Click the button below and copy the text</p>
+    
     <a target="_blank" href="https://app.schoolinks.com/api/v1/sl_users/students/0/k12-admins/"><input type="button" value="Go to k12 tab"></a>
+    <h2>Step 3:</h2>
+    <p>Paste the text below</p>
     <textarea id="user-input" class="user-input-JSON" placeholder="Copy and paste information from new tab"></textarea>
     <input type ='button' onclick="getSchedule()" value="Get Schedule" class="schedule-button">
     <script src="script.js" defer></script>
+    <div class="schedule-container"></div>
 </body>
 </html>
