@@ -28,7 +28,7 @@ async function getSchedule() {
 
 function createClassCard(classSubject, teacherName, classPeriod) {
     const classContainer = document.createElement('div');
-    classContainer.className = 'classContainer';
+    classContainer.className = 'class-container';
 
     const period = document.createElement('h2');
     period.textContent = classPeriod;
