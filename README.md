@@ -3,3 +3,4 @@ Follow the instructions on the site to get your schedule using the schoolinks me
 
 Not associated or affiliated with SchooLinks.
 Not endorsed or promoted by SchooLinks.
+All trademarks belong to their respective holders.

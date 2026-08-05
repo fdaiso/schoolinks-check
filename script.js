@@ -2,7 +2,7 @@ const scheduleContainer = document.querySelector('.schedule-container');
 const userInput = document.getElementById('user-input');
 let schedule = [{},{},{},{},{},{},{}];
 
-async function getSchedule() {
+function getSchedule() {
     scheduleContainer.replaceChildren();
     schedule = [{},{},{},{},{},{},{}];
     const rawJSON = userInput.value;
@@ -11,13 +11,11 @@ async function getSchedule() {
         alert('Error, try signing in again');
         return false;
     };
-    console.log(data);
     for(i = 0; i < data.length; i++) {
         const classTeacherPeriod = data[i].caseloads[0].name;
         schedule[Number(classTeacherPeriod.charAt(classTeacherPeriod.length-1))] = classTeacherPeriod;
         
     };
-    console.log(schedule);
     schedule.forEach(period => {
         if ((typeof period === "string")) {
             createClassCard(period.substring(0,period.indexOf('-')-1), period.substring(period.indexOf('-')+2, period.length-4), period.charAt(period.length-1));
