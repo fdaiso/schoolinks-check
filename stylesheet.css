@@ -88,7 +88,8 @@ input[type=button].schedule-button {
 
 footer {
     margin-top: 12px;
-    padding: 8px;
+    padding: 8px 0px;
     background-color: hsl(240, 5%, 30%);
     text-align: center;
+    width: 100vw;
 }
